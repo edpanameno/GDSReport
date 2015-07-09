@@ -1,6 +1,4 @@
 ﻿# GDS Report
 
-A .NET Console application that will be used to generate the GDS Report I run for the Client services department 
-on the first day of each month. The motivation behind this application is to automate this for the deparment so that I can
-do a basic query on the directory and have the results be sent to interested parties (me cc'ed) at 7:00 a.m. each 
-morning on the first day of each month. 
+A .NET console application that is used to query active directory and generate and email a report to interested parties.  The application is executed thru a scheduled task in windows on the first day of month.  It uses NDesk.Options to allow users to use different paramters to generate different reports (at this time only one type of report exists, but more can be added later). The EPPLus library is used to also generate an excel file with the results of the query. The excel file is then emailed to users along with a count summary of users by department.
+
